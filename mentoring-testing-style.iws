@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d392b842-0ee2-4c0c-a9ad-8f543be9ef82" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mentoring-testing-style.iml" afterPath="$PROJECT_DIR$/mentoring-testing-style.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mentoring-testing-style.ipr" afterPath="$PROJECT_DIR$/mentoring-testing-style.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/GameStateTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/GameStateTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala" afterPath="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mentoring-testing-style.iws" afterPath="$PROJECT_DIR$/mentoring-testing-style.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/sbt_project_definition.iml" afterPath="$PROJECT_DIR$/project/sbt_project_definition.iml" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="mentoring-testing-style.iws" />
@@ -89,22 +85,11 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameStateSpec.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala">
+      <file leaf-file-name="TicTacToeGameSpec.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="0" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.6958525">
+            <state line="87" column="0" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.78571427">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameStateTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/GameStateTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -132,13 +117,13 @@
         <option value="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeSpecTest.scala" />
         <option value="$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/TicTacToeGame_when_a_stalemate_is_next_Test.java" />
         <option value="$PROJECT_DIR$/project/build/Project.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala" />
         <option value="$PROJECT_DIR$/src/main/java/org/atxsm/num2words/UntestedTicTacToeGame.java" />
         <option value="$PROJECT_DIR$/src/test/scala/org/atxsm/num2words/UntestedTicTacToeGameTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/atxsm/num2words/NumberWords.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/atxsm/tictactoe/GameState.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/GameStateTest.java" />
         <option value="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala" />
+        <option value="$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala" />
       </list>
     </option>
   </component>
@@ -685,13 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/project/boot/scala-2.8.0/lib/scala-library-sources.jar!/scala/Option.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -727,18 +705,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="21" selection-start="725" selection-end="725" vertical-scroll-proportion="0.3548387">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/atxsm/tictactoe/GameStateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+        <state line="21" column="0" selection-start="454" selection-end="454" vertical-scroll-proportion="0.025345622">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/GameStateSpec.scala">
+    <entry file="file://$PROJECT_DIR$/src/test/scala/org/atxsm/tictactoe/TicTacToeGameSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="1794" selection-end="1794" vertical-scroll-proportion="0.6958525">
+        <state line="87" column="0" selection-start="2570" selection-end="2570" vertical-scroll-proportion="0.78571427">
           <folding />
         </state>
       </provider>

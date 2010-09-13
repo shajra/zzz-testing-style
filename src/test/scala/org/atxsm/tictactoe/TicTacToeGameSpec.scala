@@ -4,6 +4,7 @@ import org.specs.Specification
 import org.atxsm.tictactoe.Position.{Vert, Horz}
 
 class TicTacToeGameSpec extends Specification {
+
   val game = TicTacToeGame.newGame
 
   "a fresh tic tac toe game" should {
