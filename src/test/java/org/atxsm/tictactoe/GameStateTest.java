@@ -17,26 +17,35 @@ public class GameStateTest {
 
     @Test
     public void x_winning_is_permanent() {
-        assertThat(allNextStatesOf(X_HAS_WON), everyItem(is(X_HAS_WON)));
+        assertNeverChanges(X_HAS_WON);
     }
 
     @Test
     public void o_winning_is_permanent() {
-        assertThat(allNextStatesOf(O_HAS_WON), everyItem(is(O_HAS_WON)));
+        assertNeverChanges(O_HAS_WON);
     }
 
     @Test
     public void a_stalemate_is_permanent() {
-        assertThat(allNextStatesOf(STALEMATE), everyItem(is(STALEMATE)));
+        assertNeverChanges(STALEMATE);
     }
 
     @Test
-    public void not_winning_but_filling_the_board_is_a_stalemate() {
+    public void x_not_winning_but_filling_the_board_is_a_stalemate() {
         boolean winMade = false;
         boolean boardFull = true;
-        for (GameState state : Arrays.asList(O_NEXT, X_NEXT)) {
-            assertThat(state.getNextState(winMade, boardFull), is(STALEMATE));
-        }
+        assertThat(X_NEXT.getNextState(winMade, boardFull), is(STALEMATE));
+    }
+
+    @Test
+    public void o_not_winning_but_filling_the_board_is_a_stalemate() {
+        boolean winMade = false;
+        boolean boardFull = true;
+        assertThat(O_NEXT.getNextState(winMade, boardFull), is(STALEMATE));
+    }
+
+    private void assertNeverChanges(GameState state) {
+        assertThat(allNextStatesOf(state), everyItem(is(state)));
     }
 
     private List<GameState> allNextStatesOf(GameState state) {
