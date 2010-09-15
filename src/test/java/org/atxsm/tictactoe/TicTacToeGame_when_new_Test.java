@@ -24,7 +24,7 @@ public class TicTacToeGame_when_new_Test {
     }
 
     @Test(expected = NotYourTurnException.class)
-    public void should_not_all_o_to_play_next() {
+    public void should_not_allow_o_to_play_next() {
         game.play(Player.O, Horz.CENTER, Vert.CENTER);
     }
 

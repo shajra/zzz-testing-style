@@ -23,7 +23,7 @@ public class NumberWords {
     };
 
     private final static String[] TENS = {
-            "zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty",
+            null, "ten", "twenty", "thirty", "forty", "fifty", "sixty",
             "seventy", "eighty", "ninety"
     };
 
