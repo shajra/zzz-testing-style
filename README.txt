@@ -33,7 +33,10 @@ Build Tool (SBT) [1] to manage the build process.  So to build and run the
 tests in this project, you'll need two applications.
 
     - Java SE JDK 6 (or higher) [2 or 3]
-    - SBT launcher jar v0.7.5.RC0 (or higher) [4]
+    - SBT launcher JAR v0.7.5.RC0 (or higher) [4]
+
+SBT is minimal bootstrap, which downloads everything it needs from the
+internet, so you'll need a network connection to run it.
 
 [1] http://code.google.com/p/simple-build-tool
 [2] http://www.oracle.com/technetwork/java/javase/downloads/index.html
@@ -60,7 +63,7 @@ If you scroll up, you should see some reporting for all the tests.
 A Little About SBT
 ------------------
 
-The SBT launcher jar is a bootstrap application that goes out to the internet
+The SBT launcher JAR is a bootstrap application that goes out to the internet
 and downloads everything you really need.  These downloads end up in two
 places:
 
@@ -84,3 +87,35 @@ That should be enough information to demystify SBT.  SBT is an interesting
 tool, and you can learn more from the official documentation [6].
 
 [6] http://code.google.com/p/simple-build-tool/wiki/DocumentationHome
+
+
+Configuring IntelliJ IDEA
+-------------------------
+
+If you're really interested in using an IDE, IDEA to date has the most modern
+support for Scala, SBT, and arguably Java too.  JetBrains provides a free
+"Community Edition" of IDEA that has no restrictions relevant to this project.
+
+You will, though, want to install two freely available plugins, though:
+
+    - SBT
+    - Scala
+
+IDEA comes with a builtin plugin manager you can use to install these.  Note,
+there "Scala Power Pack" plugin is deprecated and unmaintained.  Also, you will
+have to configure the SBT plugin to point to your downloaded sbt-launcher JAR.
+
+Finally, to fully integrate the project into IDEA, from the command-line, run
+
+    java -jar $PATH_TO_SBT_LAUNCHER_JAR idea
+
+which will run an SBT plugin that generates all the IDEA-specific configuration
+files needed:
+
+    - .idea
+    - mentoring-testing-style.iml
+    - project/project.iml
+
+Once these files are created, open the project fresh in IDEA, and you should
+have almost all the IDE pleasantries in the Scalas part of the project you'd
+have in the Java parts.
