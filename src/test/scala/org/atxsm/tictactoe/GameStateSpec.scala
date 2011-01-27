@@ -6,6 +6,7 @@ import GameState._
 
 
 class GameStateSpec extends Specification {
+
   "X winning is permanent" in {
     assertNeverChanges(X_HAS_WON)
   }
