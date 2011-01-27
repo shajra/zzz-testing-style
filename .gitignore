@@ -1,7 +1,11 @@
-target/
+.idea
+*.iml
+*.ipr
+*.iws
+*.swp
 lib_managed/
-src_managed/
+out/
 project/boot/
 project/plugins/project/
-*.swp
-out/
+src_managed/
+target/
