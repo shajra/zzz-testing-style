@@ -8,7 +8,7 @@ It was presented to university students in a 20 minute session.
 Navigating Source Code
 ----------------------
 
-This project has .i?? files for IntelliJ's IDEA IDE [5], which this project was
+This project is tailored for IntelliJ's IDEA IDE [5], which this project was
 developed with.  Setting up IDEs, though, is a real chore.  For learning, just
 navigate the project with your favorite text editor.
 
@@ -33,7 +33,7 @@ Build Tool (SBT) [1] to manage the build process.  So to build and run the
 tests in this project, you'll need two applications.
 
     - Java SE JDK 6 (or higher) [2 or 3]
-    - SBT launcher jar v0.7.4 (or higher) [4]
+    - SBT launcher jar v0.7.5.RC0 (or higher) [4]
 
 [1] http://code.google.com/p/simple-build-tool
 [2] http://www.oracle.com/technetwork/java/javase/downloads/index.html
